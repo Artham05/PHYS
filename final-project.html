@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- Author -->
+    <meta name="author" content="Artham Agarwal">
+    <!-- description -->
+    <meta name="description" content="PHYS S-12: Introduction to Digital Fabrication | (Artham Agarwal)">
+    <!-- keywords -->
+    <meta name="keywords" content="Artham Agarwal">
+    <!-- Page Title -->
+    <title>PHYS S-12: Introduction to Digital Fabrication | (Artham Agarwal)</title>
+    <!-- Favicon -->
+    <link rel="icon" href="artham-agarwal/img/favicon.ico">
+    <!-- Bundle -->
+    <link rel="stylesheet" href="vendor/css/bundle.min.css">
+    <!-- Plugin Css -->
+    <link rel="stylesheet" href="vendor/css/revolution-settings.min.css">
+    <link rel="stylesheet" href="vendor/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/css/swiper.min.css">
+    <link rel="stylesheet" href="vendor/css/LineIcons.min.css">
+    <link href="vendor/css/jquery.fancybox.min.css" rel="stylesheet">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="artham-agarwal/css/style.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="90">
+
+<!--Preloader-->
+
+<div class="loader" id="loader-fade">
+    <div class="linear-activity">
+        <div class="indeterminate"></div>
+    </div>
+</div>
+
+<!--End Preloader-->
+
+<!--HEADER START-->
+<header>
+    <div class="main-navigation">
+
+        <div class="whatsapp-number">
+            <a href="tel:9999129129" class="agency-num"><span><i class="lni lni-whatsapp"></i></span> <span class="whatsapp-num"></span></a>
+        </div>
+
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                    <img src="artham-agarwal/img/logo-white.png" alt="logo-white">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects/Assignments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-btn" href="final-project.html"><i aria-hidden="true" class="fas fa-paper-plane"></i> Final Project</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <a href="javascript:void(0)" id="sidemenu_toggle" class="sidemenu_btn">
+            <i class="lni lni-menu"></i>
+        </a>
+
+
+        <!--Side Nav-->
+        <div class="side-menu hidden">
+            <div class="inner-wrapper">
+                <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
+                <nav class="side-nav w-100">
+                    <ul class="navbar-nav side-nav-menu">
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="#slider-sec">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="#about-sec">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="#final-project">Final Project</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="side-footer w-100">
+                    <ul class="social-icons-simple">
+                        
+                        <li><a class="instagram-text-hvr" href="https://www.instagram.com/arthamagarwal/" target="_new"><i class="fab fa-instagram"></i> </a> </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <a id="close_side_menu" href="javascript:void(0);"></a>
+        <!-- End side menu -->
+
+
+
+    </div>
+</header>
+<!--HEADER END-->
+
+
+
+<!--ABOUT SECTION-->
+<section class="gallery-sec padding-top padding-bottom position-relative" >
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center align-items-center order-1 order-lg-2">
+                <div class="about-details">
+                    <h1 class="color-red font-weight-300 pt-5">Automatic Door Closer</h1>
+					
+					<iframe width="560" height="615" src="https://www.youtube.com/embed/DCgFhbuShJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						
+					<br><br>			
+					
+					<h3 class="color-red font-weight-300 pt-1">Purpose of door closer</h3>
+                    <p>
+					Does this ever happen with you that someone walks into your room and then does not close the door on their way out? This happens with me a lot, whenever my Mother or my siblings were coming to my room, they left the door open which was creating a disturbance to my studies or affecting the interaction with my friends. I knew that my request for Door closer will not be taken favourably and hence I made this door closer myself from the knowledge I gained through this course.</p>
+					
+					
+					<h3 class="color-red font-weight-300 pt-1">Operating Principle </h3>
+                    <p>
+					The movement of the door is controlled by a motor driver, which is controlled by Esp32 over a local webserver. The power is provided by a rechargeable battery. 
+When I press the close button on the website, the motor starts rotating in the clockwise direction picking and wrapping up the string in its wheel, which in turn pulls the door. 
+<br><br>
+When I press the open button on the website, the motor starts rotating in the opposite direction unwrapping all the strings and now the door is free to be open by human power. This was a necessary gesture as I am using geared motor and they can’t be rotated by an external power. 
+<br><br>
+I have also provided a stop button so you can tell the motor when to stop once all the string is unwrapped else it would just coil again and start closing the door again. I thought of using fixed time intervals for the anticlockwise rotation but suppose if I just want the door a little open for some air or only half-open so my dog could go and come. This won’t have been possible if I would have used fixed time intervals. Hence, the stop button was very necessary. 
+<br><br>
+I have also used a limit switch in my circuit. For some reason, if the door is half opened or not precisely in its open position and I press the close button the motor will keep rotating even after the door closes, this will break my string and ruin my door and my motor. We don’t want that hence, using a limit switch in my circuit became very important.</p>
+
+					<br><br>
+
+					
+
+					<h3 class="color-red font-weight-300 pt-1">Electrical Components</h3>
+					
+                    <p>
+					<b>1. 30kg 5.5Rpm Gearmotor</b>
+					<br>
+					<img style="border:2px solid#fff;box-shadow: 0 1px 4px rgb(0 0 0 / 80%), 0 0 20px rgb(0 0 0 / 10%) inset;" src="artham-agarwal/img/electrical-components1.jpg"/>
+					
+					<br><br>
+					
+					<b>2. 14.8v 6000mAh rechargeable battery with in-built charger</b>
+					<br>
+					<img style="border:2px solid#fff;box-shadow: 0 1px 4px rgb(0 0 0 / 80%), 0 0 20px rgb(0 0 0 / 10%) inset;" src="artham-agarwal/img/electrical-components2.jpg"/>					
+					
+					<br><br>
+					
+					<b>3. L298 2A Dual Motor Driver Module</b>
+					<br>
+					<img style="border:2px solid#fff;box-shadow: 0 1px 4px rgb(0 0 0 / 80%), 0 0 20px rgb(0 0 0 / 10%) inset;" src="artham-agarwal/img/electrical-components3.jpg"/>
+					
+					<br><br>
+					
+					<b>4. Esp32</b>
+					<br>
+					<img style="border:2px solid#fff;box-shadow: 0 1px 4px rgb(0 0 0 / 80%), 0 0 20px rgb(0 0 0 / 10%) inset;" src="artham-agarwal/img/electrical-components4.jpg"/>
+					
+					<br><br>
+					
+					<b>5. Limit switch </b>
+					<br>
+					<img style="border:2px solid#fff;box-shadow: 0 1px 4px rgb(0 0 0 / 80%), 0 0 20px rgb(0 0 0 / 10%) inset;" src="artham-agarwal/img/electrical-components5.jpg"/>
+					</p>
+					
+					<br>
+					
+					<h3 class="color-red font-weight-300 pt-1">Photo of the full circuit</h3>
+					<img style="border:2px solid#fff;box-shadow: 0 1px 4px rgb(0 0 0 / 80%), 0 0 20px rgb(0 0 0 / 10%) inset;" src="artham-agarwal/img/photo-of-the-full-circuit.jpg"/>
+					
+					<br><br>
+					
+					<h3 class="color-red font-weight-300 pt-1">Schematic diagram of the circuit</h3>
+					<img style="border:2px solid#fff;box-shadow: 0 1px 4px rgb(0 0 0 / 80%), 0 0 20px rgb(0 0 0 / 10%) inset;" src="artham-agarwal/img/schematic-diagram-of-the-circuit.jpg"/>
+					
+					<br><br>
+					
+					<h3 class="color-red font-weight-300 pt-1">Making of the wooden box</h3>
+					<img style="border:2px solid#fff;box-shadow: 0 1px 4px rgb(0 0 0 / 80%), 0 0 20px rgb(0 0 0 / 10%) inset;" src="artham-agarwal/img/making-of-the-wooden-box.jpg"/>
+					
+					<br><br>
+					
+					<h3 class="color-red font-weight-300 pt-1">Fitting all the components inside the box</h3>
+					<img style="border:2px solid#fff;box-shadow: 0 1px 4px rgb(0 0 0 / 80%), 0 0 20px rgb(0 0 0 / 10%) inset;" src="artham-agarwal/img/fitting-all-the-components-inside-the-box.jpg"/>
+					
+					<br><br>
+					
+					<h3 class="color-red font-weight-300 pt-1">All the components inside the box</h3>
+					<img style="border:2px solid#fff;box-shadow: 0 1px 4px rgb(0 0 0 / 80%), 0 0 20px rgb(0 0 0 / 10%) inset;" src="artham-agarwal/img/all-the-components-inside-the-box.jpg"/>
+					
+					<br><br>
+					
+					<h3 class="color-red font-weight-300 pt-1">External look of the box after installation</h3>
+					<img style="border:2px solid#fff;box-shadow: 0 1px 4px rgb(0 0 0 / 80%), 0 0 20px rgb(0 0 0 / 10%) inset;" src="artham-agarwal/img/external-look-of-the-box-after-installation.jpg"/>
+					
+					<br><br>
+					
+					<h3 class="color-red font-weight-300 pt-1">Door with nail, string and limit switch</h3>
+					<img style="border:2px solid#fff;box-shadow: 0 1px 4px rgb(0 0 0 / 80%), 0 0 20px rgb(0 0 0 / 10%) inset;" src="artham-agarwal/img/door-with-nail-string-and-limit-switch.jpg"/>
+					
+					<br><br>
+					
+					<h3 class="color-red font-weight-300 pt-1">Website</h3>
+					<img style="border:2px solid#fff;box-shadow: 0 1px 4px rgb(0 0 0 / 80%), 0 0 20px rgb(0 0 0 / 10%) inset;" src="artham-agarwal/img/website.jpg"/>
+					
+					<br><br>
+					
+					<h3 class="color-red font-weight-300 pt-1">Code for ESP32</h3>
+					<p>
+					
+					
+					Code to control esp32 to give commands to the motor. When to stop, when to rotate clockwise, when to rotate anti-clockwise and how to Operate with the limit switch. This code also includes the website design with Automatic Door closer as heading, then By ARTHAM then the 3 buttons. Button 1 OPEN button for unwrapping then string. Button 2 CLOSE button for wrapping the string and closing the door. Button 3 STOP button for safety purposes.</p>
+					
+					<p style="background:black; color:white; border:4px solid#d81732; padding:20px">
+					#include <WiFi.h>
+					<br>
+#include <WebServer.h>
+<br>
+const char* ssid = "***"; <br>
+const char* password = "***"; 
+<br><br>
+IPAddress local_ip(192,168,1,50);<br>
+IPAddress gateway(192,168,1,1);<br>
+IPAddress subnet(255,255,255,0);
+<br><br>
+WebServer server(80);
+<br><br>
+
+uint8_t ENABLEpin = 4;<br>
+uint8_t IN1pin = 2;<br>
+uint8_t IN2pin = 15;
+<br><br>
+//Limit Switch defination<br>
+uint8_t CloseLimitSw = 12;<br>
+const uint8_t  OPEN = 1;<br>
+const uint8_t  CLOSE = 0;
+<br><br>
+uint8_t doorStatus;<br>
+const uint8_t STOPPED = 0;<br>
+const uint8_t OPENING = 1;<br>
+const uint8_t CLOSING = 2;
+<br><br>
+int doorspeed = 255;<br>
+<br><br>
+void setup() {<br>
+  Serial.begin(115200);
+<br><br>
+  pinMode(CloseLimitSw, INPUT_PULLUP);
+<br><br>
+  pinMode(ENABLEpin, OUTPUT);<br>
+  pinMode(IN1pin, OUTPUT);<br>
+  pinMode(IN2pin, OUTPUT);
+<br><br>
+  digitalWrite(ENABLEpin, HIGH);
+<br><br>
+  
+  doorStatus = STOPPED;<br>
+  <br><br>
+  WiFi.softAP(ssid, password);<br>
+  WiFi.softAPConfig(local_ip, gateway, subnet);<br>
+  delay(100);
+  <br><br>
+  server.on("/", handle_OnConnect);
+<br><br>
+  server.on("/opendoor", handle_opendoor);<br>
+  server.on("/closedoor", handle_closedoor);<br>
+  server.on("/stopdoor", handle_stopdoor);
+ <br><br>
+  server.onNotFound(handle_NotFound);
+  <br><br>
+  server.begin();
+  <br><br>
+  Serial.println("HTTP server started tiger");<br>
+}
+<br><br>
+
+void loop() {<br>
+  server.handleClient(); 
+  <br><br>
+  if((digitalRead(CloseLimitSw)== CLOSE) && (doorStatus == CLOSING))<br>
+  {stopDoor();}<br>
+}
+<br><br>
+void handle_OnConnect() {<br>
+  server.send(200, "text/html", SendHTML()); <br>
+}
+<br><br>
+void handle_opendoor() {<br>
+  openDoor();<br>
+  server.send(200, "text/html", SendHTML()); <br>
+}
+<br><br>
+void handle_closedoor() {<br>
+  closeDoor();<br>
+  server.send(200, "text/html", SendHTML()); <br>
+}
+<br><br>
+void handle_stopdoor() {<br>
+  stopDoor();<br>
+  server.send(200, "text/html", SendHTML()); <br>
+}<br>
+<br>
+void handle_NotFound(){<br>
+  server.send(404, "text/plain", "Not found");<br>
+}<br>
+<br>
+void closeDoor()<br>
+{<br>
+  if(digitalRead(CloseLimitSw)==OPEN)<br>
+  {<br>
+    digitalWrite(IN1pin, LOW);<br>
+    digitalWrite(IN2pin, HIGH); <br>
+    doorStatus = CLOSING;<br>
+  }<br>
+  else<br>
+  {stopDoor();}<br>
+}<br>
+<br>
+void openDoor()<br>
+{<br>
+  digitalWrite(IN1pin, HIGH);<br>
+  digitalWrite(IN2pin, LOW); <br>
+  doorStatus = OPENING; <br>
+}<br>
+<br>
+void stopDoor()<br>
+{<br>
+  digitalWrite(IN1pin, LOW);<br>
+  digitalWrite(IN2pin, LOW);<br>
+  doorStatus = STOPPED;<br>
+}<br>
+<br>
+String SendHTML(){<br>
+  String ptr = "\n";<br>
+  ptr +="\n";<br>
+  ptr +="Door Control\n";<br>
+  ptr +="\n";<br>
+  ptr +="\n";<br>
+  ptr +="\n";<br>
+  ptr +="\n";<br>
+  ptr +="\n";<br>
+  ptr +="\n";<br>
+  ptr +="\n";<br>
+  ptr +="\n";<br>
+  ptr +="Automatic Door Closer\n";<br><br>
+ 
+  
+  ptr +="By ARTHAM\n";<br><br>
+
+  ptr +="Tap to OPEN the door<br><a class=\"button button-open\" href=\"/opendoor\">OPEN</a>\n";<br>
+  ptr +="Tap to CLOSE the door<br><a class=\"button button-close\" href=\"/closedoor\">CLOSE</a>\n";<br>
+  
+  ptr +="Tap to STOP<br><a class=\"button button-stop\" href=\"/stopdoor\">STOP</a>\n";<br>
+ 
+  ptr +="\n";<br>
+  ptr +="\n";<br>
+  return ptr;<br>
+}
+					
+					
+					</p>
+					
+					<br><br>
+					
+					<h3 class="color-red font-weight-300 pt-1">Purchase links for all the electrical components </h3>
+					<p>
+					
+					<a target="_new" href="https://www.amazon.com/Greartisan-Electric-Reduction-Eccentric-Diameter/dp/B071KFSM8V/ref=sr_1_2_sspa?dchild=1&keywords=5.5+rpm+gear+motor&qid=1628076985&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyTzNPVkhYWFA1UVg5JmVuY3J5cHRlZElkPUEwMjI3MzU1NVc4S09CRlhCWE9WJmVuY3J5cHRlZEFkSWQ9QTA3MTU5MTFKUUY2VjBRNk8wQzQmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl">1. 1. 30kg 5.5Rpm Gearmotor</a>
+					
+					<br>
+					
+					<a target="_new" href="https://www.amazon.com/HOOVO-Connector-Quadcopter-Helicopter-Airplane/dp/B07XYM4NFC/ref=sr_1_9?dchild=1&keywords=lithium+ion+14.8v+battery+6000mah&qid=1628077141&sr=8-9">2. 14.8v 6000mAh rechargeable battery with in-built charger - </a>
+					
+					<br>
+					
+					<a target="_new" href="https://www.amazon.com/Qunqi-Controller-Module-Stepper-Arduino/dp/B014KMHSW6/ref=sr_1_4?dchild=1&keywords=L298+2A+Dual+Motor+Driver+Module&qid=1628077189&sr=8-4">3. L298 2A Dual Motor Driver Module</a>
+					
+					<br>
+					
+					<a target="_new" href="https://www.amazon.com/HiLetgo-ESP-WROOM-32-Development-Microcontroller-Integrated/dp/B0718T232Z/ref=sr_1_4?dchild=1&keywords=esp32&qid=1628077212&sr=8-4">4. Esp32</a>
+					
+					<br>
+					
+					<a target="_new" href="https://www.amazon.com/Directed-Electronics-8601-Magnetic-Switch/dp/B0009SUF08/ref=sr_1_6?crid=XNOCCFXXA3AW&dchild=1&keywords=magnetic+limit+switch&qid=1628077236&sprefix=magnetic+limit+%2Caps%2C410&sr=8-6">5. Limit switch</a>
+					
+					
+					</p>
+					
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--ABOUT SECTION-->
+
+
+
+<!--Doctor Gallery-->
+<section class="gallery-sec padding-top padding-bottom position-relative" id="projects">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="heading-area">
+                    <h4 class="heading">Projects/Assignments</h4>
+					<!--
+                    <p class="text">Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.  Lorem Ipsum has been the industry’s standard dummy. </p>
+					-->
+                </div>
+            </div>
+
+            <section class="p-0">
+    <div class="row">
+        <div class="col-md-4 wrap-item pb-4">
+                <div class="item-container effect-sadie">
+                    <a href="project1.html">
+                        <div class="overlay-inner">
+                            <img src="artham-agarwal/img/project1.jpg" alt="Rubber Sole">
+                        </div>
+						<p class="text-center pt-2">Final project prototype</p>
+					</a>
+                </div>
+        </div>
+		
+		<div class="col-md-4 wrap-item pb-4">
+                <div class="item-container effect-sadie">
+                    <a href="project2.html">
+                        <div class="overlay-inner">
+                            <img src="artham-agarwal/img/project2.jpg" alt="Rubber Sole">
+                        </div>
+						<p class="text-center pt-2">3D Designing:</p>
+					</a>
+                </div>
+        </div>
+		
+		<div class="col-md-4 wrap-item pb-4">
+                <div class="item-container effect-sadie">
+                    <a href="project3.html">
+                        <div class="overlay-inner">
+                            <img src="artham-agarwal/img/project3.jpg" alt="Rubber Sole">
+                        </div>
+						<p class="text-center pt-2">Circuit:</p>
+					</a>
+                </div>
+        </div>
+		
+		<div class="col-md-4 wrap-item pb-4">
+                <div class="item-container effect-sadie">
+                    <a href="project4.html">
+                        <div class="overlay-inner">
+                            <img src="artham-agarwal/img/project4.jpg" alt="Rubber Sole">
+                        </div>
+						<p class="text-center pt-2">Final Project Prototype:</p>
+					</a>
+                </div>
+        </div>
+		
+		<div class="col-md-4 wrap-item pb-4">
+                <div class="item-container effect-sadie">
+                    <a href="project5.html">
+                        <div class="overlay-inner">
+                            <img src="artham-agarwal/img/project5.jpg" alt="Rubber Sole">
+                        </div>
+						<p class="text-center pt-2">Programmable Electronics:</p>
+					</a>
+                </div>
+        </div>
+        
+		<div class="col-md-4 wrap-item pb-4">
+                <div class="item-container effect-sadie">
+                    <a href="project6.html">
+                        <div class="overlay-inner">
+                            <img src="artham-agarwal/img/project6.jpg" alt="Rubber Sole">
+                        </div>
+						<p class="text-center pt-2">STL and gcode:</p>
+					</a>
+                </div>
+        </div>
+		
+		<div class="col-md-4 wrap-item pb-4">
+                <div class="item-container effect-sadie">
+                    <a href="project7.html">
+                        <div class="overlay-inner">
+                            <img src="artham-agarwal/img/project7.jpg" alt="Rubber Sole">
+                        </div>
+						<p class="text-center pt-2">Sensors:</p>
+					</a>
+                </div>
+        </div>
+		
+		<div class="col-md-4 wrap-item pb-4">
+                <div class="item-container effect-sadie">
+                    <a href="project8.html">
+                        <div class="overlay-inner">
+                            <img src="artham-agarwal/img/project8.jpg" alt="Rubber Sole">
+                        </div>
+						<p class="text-center pt-2">Electronic output devices:</p>
+					</a>
+                </div>
+        </div>
+		
+		<div class="col-md-4 wrap-item pb-4">
+                <div class="item-container effect-sadie">
+                    <a href="project9.html">
+                        <div class="overlay-inner">
+                            <img src="artham-agarwal/img/project9.jpg" alt="Rubber Sole">
+                        </div>
+						<p class="text-center pt-2">IOT and networking devices:</p>
+					</a>
+                </div>
+        </div>
+        
+    </div>
+	
+</section>
+        </div>
+    </div>
+</section>
+<!--Doctor Gallery-->
+
+<!--Doctor Blogs-->
+<section class="our-blog" id="final-project">
+        <div class="row no-gutters">
+            <div class="col-12 col-md-12 col-lg-6 padding-top padding-bottom">
+               <div class="blog-data text-center">
+                   <h1 class="text-white">Final Project</h1>
+                   <p class="text text-white">Electrical Automatic door closer operated with Esp32 over local server.</p>
+                   <a href="final-project.html" class="btn red-and-white-btn rounded-pill">View</a>
+               </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 blog-background">
+
+            </div>
+        </div>
+</section>
+<!--Doctor Blogs-->
+
+
+
+
+
+
+<!-- START FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="row align-items-center">
+            <!--Social-->
+            <div class="col-12 text-center">
+                <div class="footer-social">
+                    <ul class="list-unstyled social-icons social-icons-simple">
+						<li><a href="https://youtube.com/channel/UCpfylwOYEV-VSUyo6qcoWbg" target="_new"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                        <li><a class="position-relative instagram_bg_hvr2 wow fadeInUp" target="_new" href="https://www.instagram.com/arthamagarwal/"><i class="fab fa-instagram" aria-hidden="true"></i> </a> </li>
+                        <li><a class="active" href="tel:9999129129"><i class="lni lni-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+                <!--Text-->
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END FOOTER -->
+
+
+
+
+<!-- JavaScript -->
+<script src="vendor/js/bundle.min.js"></script>
+
+<!-- Plugin Js -->
+<script src="vendor/js/owl.carousel.min.js"></script>
+<script src="vendor/js/swiper.min.js"></script>
+<script src="vendor/js/jquery.appear.js"></script>
+<script src="vendor/js/TweenMax.min.js"></script>
+<script src="vendor/js/parallaxie.min.js"></script>
+<script src="vendor/js/jquery.fancybox.min.js"></script>
+<!-- REVOLUTION JS FILES -->
+<script src="vendor/js/jquery.themepunch.tools.min.js"></script>
+<script src="vendor/js/jquery.themepunch.revolution.min.js"></script>
+<!-- SLIDER REVOLUTION EXTENSIONS -->
+<script src="vendor/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.video.min.js"></script>
+<script src="vendor/js/extensions/revolution.extension.beforeafter.min.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4fusEY9kSwNHgtK8KOgyoTsyP5Tb2NXo"></script>
+<script src="artham-agarwal/js/map.js"></script>
+
+<script src="vendor/js/contact_us.js"></script>
+<script src="artham-agarwal/js/script.js"></script>
+
+</body>
+</html>
